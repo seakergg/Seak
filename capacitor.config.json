@@ -3,7 +3,5 @@
   "appName": "Seakk",
   "webDir": "www",
   "backgroundColor": "#02040a",
-  "plugins": {
-    "CapacitorHttp": { "enabled": true }
-  }
+  "plugins": {}
 }
