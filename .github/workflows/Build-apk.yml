@@ -20,16 +20,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Java (JDK 17) beállítása
+      - name: Java (JDK 21) beállítása
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
 
       - name: Webes fájlok előkészítése (www mappa)
         run: |
           mkdir -p www
-          cp index.html manifest.json sw.js icon-*.png www/ 2>/dev/null || true
+          cp index.html manifest.json sw.js icon-192.png icon-512.png www/ 2>/dev/null || true
 
       - name: Függőségek telepítése és Android projekt generálása
         run: |
